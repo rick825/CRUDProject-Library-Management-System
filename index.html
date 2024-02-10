@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <header id="nav">
+      <div class="nav">
+         <div class="navleft">
+            <div class="navlogo">
+               <a href=""><h2>Library Management System</h2></a>
+            </div>
+         </div>
+         <div class="navmid">
+          <div class="navlist">
+            <ul>
+                <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/windows/32/home.png" alt="home"/>Home</a></li>
+                <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/ios/50/search-in-browser.png" alt="search-in-browser"/>Browse</a></li>
+                <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/ios/50/books.png" alt="books"/>My Books</a></li>
+                <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/ios/50/new--v1.png" alt="new--v1"/>Whats new!</a></li>
+            </ul>
+           </div>
+         </div>
+         <div class="navright">
+            <div class="navlist">
+             <ul>
+              <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/fluency-systems-regular/48/settings--v1.png" alt="settings--v1"/></a></li>
+              <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/ios/50/blogger.png" alt="blogger"/></a></li>
+              <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/windows/32/000000/user-male-circle.png" alt="user-male-circle"/></a></li>
+             </ul>
+            </div>
+         </div>
+      </div>
+     </header>
+     <!-- end header section -->
+
+
+     <!-- main section -->
+     <section id="main">
+      <div class="main">
+
+        <div class="main-top">
+         <div class="add-book">
+             <div class="add-book-head">
+                <h2>Add Your Book</h2>
+             </div>
+             <div class="add-book-form">
+                <form>
+                  <input type="text" placeholder="Title" id="title">
+                  <input type="text" placeholder="Author" id="author">
+                  <input type="number" placeholder="Pages" class="pages" id="pages">
+                  <input type="text" placeholder="Genre" id="genre">
+                  <button onclick="addBook(event)">Submit</button>
+                </form>
+             </div>
+         </div>
+        </div>
+
+        <div class="main-bot">
+         <div class="search-books">
+            <form action="">
+               <input type="text" name="query" placeholder="Search books.." id="search-by-title">
+               <button type="submit" onclick="searchBooks(event)">Search</button>
+            </form>
+         </div>
+         <div class="books" id="books"></div>
+        </div>
+
+      </div>
+     </section>
+     <!-- end main section -->
+
+     <script src="script.js"></script>
+  
+</body>
+</html>

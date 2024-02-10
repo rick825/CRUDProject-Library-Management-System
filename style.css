@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Open Sans';
+}
+
+
+body{
+ width: 100%;
+ background-color: rgb(255, 255, 254);
+}
+
+/* header section */
+.nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    z-index: 1000;
+}
+
+
+.navleft{
+  
+}
+.navleft .navlogo a{
+    color: rgb(23, 23, 23);
+}
+.navleft .navlogo h2{
+    font-size: 2.2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+.navlist ul{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+}
+
+.navmid .navlist ul{
+ gap:2.5rem;
+}
+
+.navmid a{
+    color: black;
+    font-size: 1.22rem;
+    display: flex;
+    align-items: center;
+    gap:0.6rem;
+}
+
+.navright .navlist ul  .navlink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 0.1px solid rgba(0, 0, 0, 0.14);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+
+.navlist ul .search{
+    display: none;
+}
+
+.navlist ul img{
+    width: 24px;
+    object-fit: cover;
+}
+/* end header section */
+
+
+/* main section */
+.main{
+    width: 100%;
+    height: 50rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.main-top  input,.main-bot input{
+    padding: 1rem;
+    border-radius: 10px;
+    border: 0.2px solid rgba(54, 54, 54, 0.592);
+    
+}
+
+.main-top button,.main-bot button{
+    padding: 1rem;
+    background-color: rgb(43, 164, 45);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* main top */
+.main-top{
+    background-color: rgb(249, 248, 248);
+    width: 80%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  
+}
+
+.main-top .add-book{
+ display: flex;
+ flex-direction: column;
+ gap:2rem;
+}
+
+.main-top .add-book form{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.main-top .add-book .pages{
+    width: 8rem;
+}
+
+
+/* end main top */
+/* main bot */
+.main-bot{
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 80%;
+    height: 50rem; 
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    background-color: rgb(249, 248, 248);
+}
+
+.search-books{
+    padding: 0rem 4rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+
+.search-books form{
+    display: flex;
+    gap:2rem;
+}
+
+.books{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:4rem;
+    margin-top: 2rem;
+    overflow-y: auto;
+    padding: 2rem 0rem;
+    padding-top: 0rem;
+    padding-left: 4rem;
+}
+
+.books .book{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    min-height: 18rem;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    border: 0.2px solid rgba(54, 54, 54, 0.592);
+}
+
+.books .book button{
+    margin-top: 1rem;
+}
+
+.book .book-title{
+    font-size: 2rem;
+}
+
+.book  .book-author{
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+.book  .book-pages{
+    font-size: 1.1rem;
+    margin-top: 8.4rem;
+}
+
+.book  .book-genre{
+    margin-top: 0.3rem;
+}
+/* end main bot */
+/* end main section */
